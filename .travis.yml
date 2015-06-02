@@ -1,6 +1,7 @@
 language: java
 after_success:
   - chmod 600 .travis/id_rsa.pub
+  - eval `ssh-agent`
   - ssh-add .travis/id_rsa.pub
   - git remote add deploy git@github.com:nalezyty/built-artifacts-oidc.git
   - git push deploy
