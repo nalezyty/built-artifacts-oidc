@@ -14,4 +14,4 @@ git config user.email "travis"
 
 git add .
 git commit -m "deployed to github pages"
-git push --force --quiet $FULL_REPO master:gh-pages
+git push --force --quiet $FULL_REPO master
