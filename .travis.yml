@@ -4,4 +4,6 @@ env:
     secure: "jy+jC/Ef65dstDvSJ4HYm+d24OKkGFuElvvJGkofwFRy8Kftk6QRzYjbNO+UuiTq4tEY9lbhX6d8XzPmv4DH/L8DgvuZOjheMlClmBwCaa5UY/DjbwjZ2VzDCFHngsgul8PmhD0ytcejneD7iy6QOg8a/fUFxqLJ7I6m5eSzAJLTx2H9JSgy71w9oLdC1+e10jpidCyPPM0Bnkj+vvc98AnS8pSIH30qJrXT1viJAXiJI+095Y+/AoxoP9p41xoA/oiKy8NwCMWwscY70elAkHcCdHa0lAXTDBZ99XweF9rwO+5cfvRJc474KlwVRSSqJmEbpwWXovW35Ldbd9sItQmom3TPdEs+FFzGsCm79J09pkreM+HRwNgq7wGqM0WfaLR7DfF7iIOdqNtIZkgop/hEmelC674z7FMnkAUK+EmgV/UqKa6BWXVhuDyfGdO0L7k1VCUIMZPho9T4CzjyeSnr59JgYgFAyV1dwbhjJl6VU79quHUCu6IwbvX2XcDt1h6ZLmtPp4PUrMQz27DoDH46aepK95NxvSKbU0t30o2gVWXRj2YB5NrZYlwZKvf+8JbXim1Jb+JjvLQ0jrXEzqZWDRMgUEKRVT9Ar1lQSEkJWrqun4KYgP3jOvG0BiMsD143OXAOOz27N6NMQj9SBHfloQRVpgfrilaQlUKM+Qs="
 before_install:
   - chmod 755 ./deploy-ghpages.sh
-after_success: ./deploy-ghpages.sh
+after_success: 
+  - mvn package
+  - ./deploy-ghpages.sh
