@@ -7,6 +7,7 @@ GH_REPO="@github.com:nalezyty/built-artifacts-oidc.git"
 
 FULL_REPO="https://$GH_TOKEN$GH_REPO"
 
+cd out
 git init
 git config user.name "nalezyty-travis"
 git config user.email "travis"
