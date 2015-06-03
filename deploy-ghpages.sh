@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-GH_REPO="@github.com:nalezyty/built-artifacts-oidc.git"
+GH_REPO="@github.com/nalezyty/built-artifacts-oidc.git"
 
 FULL_REPO="https://$GH_TOKEN$GH_REPO"
 
