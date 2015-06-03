@@ -1,5 +1,4 @@
 local-values.conf
-target
 *~
 bin
 *.idea
